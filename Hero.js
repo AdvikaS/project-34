@@ -17,7 +17,7 @@ class Hero{
       push();
       translate(this.body.position.x, this.body.position.y);
       imageMode(CENTER)
-      image(this.image, 0, 0,this.radius*2);
+      image(this.image,this.body.x,this.body.y,this.weight,this.height);
       pop();
     }
   };

@@ -42,9 +42,9 @@ function setup(){
 
     monster = new Monster(1100, 500, 200)
 
-    ball = new Hero(22, 20, 2);
+    hero = new Hero(22, 20, 2);
 
-    rope = new Fly(ball.body, {x:300, y:50})
+    rope = new Fly(hero.body, {x:300, y:50})
 }
 
 function draw(){
@@ -70,7 +70,7 @@ function draw(){
     box18.display();
     box19.display();
     box20.display();
-    ball.display();
+    hero.display();
 
     monster.display();
 
@@ -85,5 +85,5 @@ function draw(){
 }
 
 function mouseDragged(){
-    Matter.Body.setPosition(ball.body, {x:mouseX, y:mouseY})
+    Matter.Body.setPosition(hero.body, {x:mouseX, y:mouseY})
 }
